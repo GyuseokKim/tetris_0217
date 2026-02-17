@@ -17,10 +17,21 @@
         <canvas id="board" width="300" height="600"></canvas>
 
         <aside class="panel">
-          <canvas id="next" width="120" height="120"></canvas>
+          <div class="side-top">
+            <div class="mini">
+              <label>Hold</label>
+              <canvas id="hold" width="120" height="120"></canvas>
+            </div>
+
+            <div class="mini">
+              <label>Next</label>
+              <canvas id="next" width="120" height="120"></canvas>
+            </div>
+          </div>
 
           <div class="stats">
             <div>Score: <strong id="score">0</strong></div>
+            <div>Best: <strong id="best">0</strong></div>
             <div>Lines: <strong id="lines">0</strong></div>
             <div>Level: <strong id="level">0</strong></div>
           </div>
@@ -30,11 +41,13 @@
             <button id="btn-rotate">⟳</button>
             <button id="btn-right">▶</button>
             <button id="btn-drop">▼</button>
+            <button id="btn-hold">Hold</button>
             <button id="btn-pause">Pause</button>
             <button id="btn-restart">Restart</button>
+            <button id="btn-sound" aria-pressed="true">🔊</button>
           </div>
 
-          <p class="hint">Controls: ← → ↓ (이동) ↑ / Z (회전) Space (하드드롭) P (일시정지)</p>
+          <p class="hint">Controls: 터치/버튼 지원 — 좌/우 스와이프 이동, 탭 회전, 아래로 스와이프 하드드롭, C(hold)</p>
         </aside>
       </main>
 
