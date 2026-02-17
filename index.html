@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tetris — GitHub Pages</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Tetris</h1>
+        <p class="sub">Vanilla JS / GitHub Pages에 바로 호스팅 가능</p>
+      </header>
+
+      <main class="game-area">
+        <canvas id="board" width="300" height="600"></canvas>
+
+        <aside class="panel">
+          <canvas id="next" width="120" height="120"></canvas>
+
+          <div class="stats">
+            <div>Score: <strong id="score">0</strong></div>
+            <div>Lines: <strong id="lines">0</strong></div>
+            <div>Level: <strong id="level">0</strong></div>
+          </div>
+
+          <div class="controls">
+            <button id="btn-left">◀</button>
+            <button id="btn-rotate">⟳</button>
+            <button id="btn-right">▶</button>
+            <button id="btn-drop">▼</button>
+            <button id="btn-pause">Pause</button>
+            <button id="btn-restart">Restart</button>
+          </div>
+
+          <p class="hint">Controls: ← → ↓ (이동) ↑ / Z (회전) Space (하드드롭) P (일시정지)</p>
+        </aside>
+      </main>
+
+      <footer>
+        <small>브라우저에서 <code>index.html</code>를 열거나 GitHub에 푸시해 Pages로 호스팅하세요.</small>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
